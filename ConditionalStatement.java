@@ -24,7 +24,7 @@ public class ConditionalStatement {
         int n1 = 3;
         int n2 = 4;
         System.out.println("請輸入想要做的運算 (支援 + - * /): ");
-        Scanner s= new Scanner(System.in);
+        Scanner s = new Scanner(System.in);
         String op = s.next();
         // System.out.println("使用者輸入的運算符號");
         // System.out.println(op);
@@ -45,5 +45,7 @@ public class ConditionalStatement {
                 System.out.println("不支援的運算符號");
                 break;
         }
+
+        s.close();
     }
 }
