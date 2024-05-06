@@ -1,3 +1,4 @@
+package basic;
 public class Loop {
     public static void main(String[] args) {
         // while 迴圈
