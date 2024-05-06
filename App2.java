@@ -1,11 +1,13 @@
-class App2 {
+class Test3 {
     public static void main(String[] args) {
         // 程式進入點
-        App2.talk("Hello"); // 呼叫類別的方法
-        App2.talk("你好");
+        Test3.talk("Hello"); // 呼叫類別的方法
+        Test3.talk("你好");
         // talk();
-        BasicMath.add(3, 4);
-        BasicMath.mutliply(4, 2);
+        int ans = BasicMath.add(3, 4);
+        System.out.println(ans * 20);
+        ans = BasicMath.mutliply(4, 2);
+        System.out.println("乘法的結果是：" + ans);
     }
 
     // 定義更多自己的類別方法
@@ -15,14 +17,15 @@ class App2 {
 }
 
 class BasicMath {
-    static void add(int n1, int n2){
+    static int add(int n1, int n2){
         int result = n1 + n2;
-        System.out.println(result);
+        // System.out.println(result);
+        return result;
     }
 
-    static void mutliply(int n1, int n2){
-        int result = n1 * n2;
-        System.out.println(result);
+    static int mutliply(int n1, int n2){
+        return n1 * n2;
+        // System.out.println(result);
     }
      
 }
