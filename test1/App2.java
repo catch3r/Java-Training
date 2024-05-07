@@ -1,3 +1,5 @@
+import math.BasicMath;
+
 class Test3 {
     public static void main(String[] args) {
         // 程式進入點
