@@ -1,6 +1,6 @@
 import math.geometry.Point;
 
-public class App {
+public class App4 {
     public static void main(String[] args) {
         // 程式進入點
         System.out.println(Point.Origin_X);
