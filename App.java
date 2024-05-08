@@ -1,15 +1,16 @@
-import math.BasicMath;
-// import math.geometry.Rectangle;
-import math.geometry.*;
+import math.geometry.Point;
 
-class App {
+public class App {
     public static void main(String[] args) {
         // 程式進入點
-        System.out.println(BasicMath.PI);
-        int result = BasicMath.add(3, 4);
-        System.out.println(result);
-        System.out.println(Rectangle.Golden_Ratio);
+        System.out.println(Point.Origin_X);
+        Point.renderOrigin();
+        // 呼叫建構式，產生 Point 物件實體
+        Point obj = new Point(3, 4);
+        System.out.println(obj.x);
+        obj.render();
+        Point p2 = new Point(1, 1);
+        System.out.println(p2.x);
+        p2.render();
     }
-
-    
 }
